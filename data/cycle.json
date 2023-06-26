@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "name": "STARTER",
+    "imgOne": "https://onzo.progressionstudios.com/wp-content/uploads/2017/07/onzo-mountain.jpg",
+    "smallImgOne": "https://onzo.progressionstudios.com/wp-content/uploads/2017/07/onzo-mountain-100x100.jpg",
+    "smallImgTwo": "https://149357172.v2.pressablecdn.com/wp-content/uploads/2017/07/elite-helmet-100x100.jpg",
+    "smallImgThree": "https://149357172.v2.pressablecdn.com/wp-content/uploads/2017/07/helmet-new-100x100.jpg",
+    "smallImgFour": "https://149357172.v2.pressablecdn.com/wp-content/uploads/2017/07/seat-new-100x100.jpg",
+    "nameTwo": "Cycle ZzOoN Starter",
+    "paragraph": "This is a Demo Online Store. No orders shall be fulfilled. This is a Design-Driven Theme for WooCommerce and WordPress. If you’re planning to start an online store right away, look no further, get this theme on ThemeForest.",
+    "price": "$ 1,700"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "name": "ROAD"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "name": "PRO"
+  }
+]
