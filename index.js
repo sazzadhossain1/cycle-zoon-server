@@ -16,6 +16,12 @@ app.get("/cycleData", (req, res) => {
   res.send(cycleData);
 });
 
+app.get("/cycleData/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const cycles = cycleData.find((cycle) => cycle.id === id);
+  res.send(cycles);
+});
+
 app.listen(port, () => {
   console.log("Cycle zoon port is running");
 });
