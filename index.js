@@ -7,6 +7,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 
 const cycleData = require("./data/cycle.json");
+const newsData = require("./data/news.json");
 
 app.get("/", (req, res) => {
   res.send("Cycle zoon server is running");
@@ -20,6 +21,10 @@ app.get("/cycleData/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const cycles = cycleData.find((cycle) => cycle.id === id);
   res.send(cycles);
+});
+
+app.get("/news.json", (req, res) => {
+  res.send(newsData);
 });
 
 app.listen(port, () => {
