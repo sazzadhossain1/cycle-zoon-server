@@ -23,10 +23,15 @@ app.get("/cycleData/:id", (req, res) => {
   res.send(cycles);
 });
 
-app.get("/news.json", (req, res) => {
+app.get("/newsData", (req, res) => {
   res.send(newsData);
 });
 
+app.get("/newsData/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const newsVar = newsData.find((news) => news.id === id);
+  res.send(newsVar);
+});
 app.listen(port, () => {
   console.log("Cycle zoon port is running");
 });
