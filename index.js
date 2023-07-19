@@ -40,6 +40,12 @@ app.get("/newsData/:id", (req, res) => {
 app.get("/accessoriesData", (req, res) => {
   res.send(accessoriesData);
 });
+app.get("/accessoriesData/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const accessoriesVar = accessoriesData.find((accDAta) => accDAta.id === id);
+  res.send(accessoriesVar);
+});
+// ==================== //
 
 app.listen(port, () => {
   console.log("Cycle zoon port is running");
